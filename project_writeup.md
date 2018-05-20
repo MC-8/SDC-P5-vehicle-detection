@@ -92,6 +92,7 @@ I decided to search the center area of the image using multiple window sizes, th
 I also chose to restrict the search location by not looking for cars on the left side to avoid many false positives or detecting incoming cars on the left side. In a scenario where the car changes lane and needs to keep an eye on all sides of the road, clearly this strategy would be catastrophic.
 Each window is then resized to `64x64` pixels using openCV, which is the same size of the training set images. 
 For each resized images I then extract features and classify them to identify if the window contains a car or not.
+
 ![alt text][windows]
 
 #### 2. Show some examples of test images to demonstrate how your pipeline is working.  What did you do to optimize the performance of your classifier?
