@@ -97,9 +97,9 @@ For each resized images I then extract features and classify them to identify if
 
 #### 2. Show some examples of test images to demonstrate how your pipeline is working.  What did you do to optimize the performance of your classifier?
 
-Ultimately I searched on two scales using YUV 3rd channel HOG features plus spatially binned color and histograms of color in the feature vector, which provided a nice result.  Here are some example images:
+Ultimately I searched on two scales using YUV 3rd channel HOG features plus spatially binned color and histograms of color in the feature vector, which provided a nice result. The following image shows one test image, followed by the same image converted to the YUV color space (the colors are different because the visualization is still done in RGB), and the 3rd image is the one used by the pipeline, which is the 3rd channel of the YUV-converted image, it can be noted that both cars are "highlighted" in this colorspace (even if the original cars are of two very different colors (black and white). Haaving distinct features in the color space may help classifying frames, in addition to the HOG transformation, hence the features have been concatenated and scaled.
 
-![alt text][processedtestimages]
+![alt text][colorspaces]
 ---
 
 ### Video Implementation
