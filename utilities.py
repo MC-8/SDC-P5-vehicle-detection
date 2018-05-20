@@ -57,7 +57,7 @@ def bin_spatial(img, color_space='YUV', size=(32, 32)):
     return features
 
 
-def get_hog_features(img, orient=11, pix_per_cell=16, cell_per_block=2, vis=False,
+def get_hog_features(img, orient=8, pix_per_cell=8, cell_per_block=2, vis=False,
                      feature_vec=True, color_space='YUV', hog_channels=1):
     """
     Function accepts params and returns HOG features (optionally flattened) and an optional matrix for
